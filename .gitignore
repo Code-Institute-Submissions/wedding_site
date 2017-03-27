@@ -3,3 +3,4 @@ env.py
 db.sqlite3
 *.pyc
 media
+env.sh
