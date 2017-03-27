@@ -3318,15 +3318,15 @@ input[type='submit'],
     position: relative;
 }
 
-.widget:after {
-    font-family: 'Flaticon';
-    position: absolute;
-    left: 42%;
-    font-size: 62px;
-    line-height: 62px;
-    color: #f5adbb;
-    content: "\f15b";
-}
+/*.widget:after {*/
+    /*font-family: 'Flaticon';*/
+    /*position: absolute;*/
+    /*left: 42%;*/
+    /*font-size: 62px;*/
+    /*line-height: 62px;*/
+    /*color: #f5adbb;*/
+    /*content: "\f15b";*/
+/*}*/
 
 .widget .title {
     font-size: 24px;

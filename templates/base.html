@@ -40,6 +40,9 @@
     <link href="{% static "assets/custom/scss/mediaquery.scss" %}" property='stylesheet' rel="stylesheet"
           type="text/css"
           media="screen"/>
+
+    {# lightwidget instagram #}
+    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
 </head>
 
 <body class="boxed">
@@ -74,13 +77,13 @@
                                 <nav class="collapse navbar-collapse navbar-ex1-collapse e-centered">
                                     <!--<i class="nav-decor-left flaticon-christmas-rose"></i>-->
                                     <ul class="nav navbar-nav">
-                                        <li><a href="{% static "index.html" %}">Home</a></li>
-                                        <li><a href="{% static "about.html" %}">About Claire</a></li>
-                                        <li><a href="{% static "packages.html" %}">Packages</a></li>
-                                        <li><a href="{% static "listen.html" %}">Listen</a></li>
-                                        <li><a href="{% static "faq.html" %}">FAQ</a></li>
-                                        <li><a href="{% static "contact.html" %}">Contact</a></li>
-                                        <li><a href="{% static "login.html" %}">Login</a></li>
+                                        <li><a href="{% url "index" %}">Home</a></li>
+                                        <li><a href="{% url "about" %}">About Claire</a></li>
+                                        <li><a href="{% url "packages" %}">Packages</a></li>
+                                        <li><a href="{% url "listen" %}">Listen</a></li>
+                                        <li><a href="{% url "faq" %}">FAQ</a></li>
+                                        <li><a href="{% url "contact" %}">Contact</a></li>
+                                        <li><a href="{% url "login" %}">Login</a></li>
                                     </ul>
                                 </nav>
                             </div>
