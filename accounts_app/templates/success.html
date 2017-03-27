@@ -3,11 +3,14 @@
 
     {# This jQuery redirects to a personalised event page after 7 seconds #}
     <script>
+
     function redirect(){
        window.location.href = "{% url 'profile' %}";
     }
 
     setTimeout(redirect, 7000);
+
+
     </script>
 
     <div id="content">
@@ -23,5 +26,6 @@
 
         </div>
     </div>
+
 {% endblock %}
 

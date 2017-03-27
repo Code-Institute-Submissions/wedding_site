@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import home, about, packages, listen, faq, contact, blog, login
+from .views import home, about, packages, listen, faq, contact, blog
 
 urlpatterns = [
     url(r'^$', home, name="index"),
@@ -9,7 +9,6 @@ urlpatterns = [
     url(r'^faq', faq, name="faq"),
     url(r'^contact', contact, name="contact"),
     url(r'^blog', blog, name="blog"),
-    url(r'^login', login, name="login"),
 ]
 
 

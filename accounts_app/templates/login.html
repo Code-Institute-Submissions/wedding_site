@@ -7,7 +7,7 @@
     <div id="content">
         <div class="container">
 
-            <form role="form" method="post" action="{% url 'login' %}?next={{ 'profile' }}">
+            <form role="form" method="post" action="{% url 'login' %}?next={% url 'success' %}">
                 <legend>Login</legend>
                 {% csrf_token %}
                 {{ form | as_bootstrap }}

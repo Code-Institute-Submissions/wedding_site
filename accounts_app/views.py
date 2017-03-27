@@ -5,6 +5,7 @@ from accounts_app.forms import UserRegistrationForm, UserLoginForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 
+
 # Create your views here.
 
 
@@ -20,7 +21,7 @@ def register(request):
             if user:
                 auth.login(request, user)
                 messages.success(request, "You have successfully registered")
-                return redirect(reverse('profile'))
+                return redirect(reverse('success'))
 
             else:
                 messages.error(request, "unable to log you in at this time!")
@@ -58,7 +59,7 @@ def login(request):
                     next = request.GET['next']
                     return HttpResponseRedirect(next)
                 else:
-                    return redirect(reverse('profile'))
+                    return redirect(reverse('success'))
             else:
                 form.add_error(None, "Your username or password was not recognised")
 

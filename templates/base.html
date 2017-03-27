@@ -84,7 +84,18 @@
                                         <li><a href="{% url "faq" %}">FAQ</a></li>
                                         <li><a href="{% url "blog" %}">My Blog</a></li>
                                         <li><a href="{% url "contact" %}">Contact</a></li>
-                                        <li><a href="{% url "login" %}">Account</a></li>
+                                        <li class = "dropdown slide-link"><a href="#">Account</a>
+                                            <ul class="dropdown-content rounded">
+                                                {% if user.is_authenticated %}
+                                                <li><a href="{% url 'profile' %}">Your Wedding</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                                                {% else %}
+                                                <li><a href="{% url 'login' %}?next={% url 'success' %}">Log In</a></li>
+                                                <li><a href="{% url 'register' %}?next={% url 'success' %}">Register</a></li>
+                                                {% endif %}
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

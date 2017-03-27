@@ -5,6 +5,36 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700);
 @import url(../../vendor/flaticons/flaticon.css);
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fdf1f3;
+    min-width: 160px;
+    z-index: 1;
+    left: -15px;
+}
+
+.dropdown-content a {
+    padding: 0 0 10px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.rounded {
+    border-bottom-right-radius: 70px;
+}
+
+
 .fontcolor-regular,
 .fontcolor-regular a {
     color: #303030 !important;
