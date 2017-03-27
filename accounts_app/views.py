@@ -35,6 +35,10 @@ def register(request):
 
 
 @login_required(login_url='/accounts/login')
+def success(request):
+    return render(request, 'success.html')
+
+
 def profile(request):
     return render(request, 'profile.html')
 

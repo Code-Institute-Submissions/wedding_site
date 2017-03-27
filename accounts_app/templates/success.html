@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {# This jQuery redirects to a personalised event page after 7 seconds #}
+    <script>
+    function redirect(){
+       window.location.href = "{% url 'profile' %}";
+    }
+
+    setTimeout(redirect, 7000);
+    </script>
+
+    <div id="content">
+        <div class="container">
+
+            <br>
+            <h2>Success!</h2>
+            <br>
+            <p>You are logged in as {{ user.email }} </p>
+            <hr>
+            <p>You will be redirected to your event page momentarily. </p>
+            <br>
+
+        </div>
+    </div>
+{% endblock %}
+

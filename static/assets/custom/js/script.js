@@ -68,6 +68,7 @@
         });
 
 
+
         /* Sticky Scroll */
 
         $(".sticky-column").stickit({
@@ -226,5 +227,8 @@
 
 
     });
+
+
+
 
 })(jQuery);
