@@ -59,7 +59,7 @@
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <h1 class="text-center"><a href="{% static "index.html" %}">Claire Heffernan</a></h1>
+                            <h1 class="text-center"><a href="{% url "index" %}">Claire Heffernan</a></h1>
                             <span class="small subtitle"><span class="lined">Vocalist, Harpist, Pianist</span></span>
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target=".navbar-ex1-collapse">
@@ -82,9 +82,9 @@
                                         <li><a href="{% url "packages" %}">Packages</a></li>
                                         <li><a href="{% url "listen" %}">Listen</a></li>
                                         <li><a href="{% url "faq" %}">FAQ</a></li>
-                                        <li><a href="{% url "contact" %}">Contact</a></li>
                                         <li><a href="{% url "blog" %}">My Blog</a></li>
-                                        <li><a href="{% url "login" %}">Login</a></li>
+                                        <li><a href="{% url "contact" %}">Contact</a></li>
+                                        <li><a href="{% url "login" %}">Account</a></li>
                                     </ul>
                                 </nav>
                             </div>
