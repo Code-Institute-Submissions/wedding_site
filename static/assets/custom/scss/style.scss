@@ -549,19 +549,19 @@
 
 
 
-// Widgets
+ Widgets
 
-//.widget {
-//  position: relative;
-//  &:after{
-//    font-family: 'Flaticon';
-//    position: absolute;
-//    left: 42%;
-//    font-size: 62px;
-//    line-height: 62px;
-//    color: lighten($rose, 20%);
-//    content: "\f15b";
-//  }
+.widget {
+  position: relative;
+  &:after{
+    font-family: 'Flaticon';
+    position: absolute;
+    left: 42%;
+    font-size: 62px;
+    line-height: 62px;
+    color: lighten($rose, 20%);
+    content: "\f15b";
+  }
   .title {
     font-size: 24px;
     font-family: $font-accident-two;
