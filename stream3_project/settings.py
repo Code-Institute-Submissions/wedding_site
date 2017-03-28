@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts_app',
     'storages',
+    'events_app',
 ]
 
 MIDDLEWARE = [

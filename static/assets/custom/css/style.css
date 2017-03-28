@@ -6,7 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700);
 @import url(../../vendor/flaticons/flaticon.css);
 
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -426,6 +425,8 @@ label {
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -679,6 +680,8 @@ legend {
 button,
 input,
 textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 100%;
     margin: 0 0 10px;
@@ -1854,6 +1857,8 @@ a.page-numbers:hover i {
 /* Content - Contributor Page */
 
 .contributor {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 48px 10px;
     border-bottom: 1px solid rgba(31, 31, 31, 0.1);
