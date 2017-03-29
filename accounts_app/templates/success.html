@@ -1,15 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {# This jQuery redirects to a personalised event page after 7 seconds #}
+    {# This jQuery redirects to a personalised event page after 4 seconds #}
     <script>
 
     function redirect(){
-       window.location.href = "{% url 'event' id=event.id %}";
+       window.location.href = "{% url 'user_event' %}";
     }
 
     setTimeout(redirect, 4000);
-
 
     </script>
 

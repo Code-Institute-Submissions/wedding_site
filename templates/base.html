@@ -87,7 +87,7 @@
                                         <li class = "dropdown slide-link"><a href="#">Account</a>
                                             <ul class="dropdown-content rounded">
                                                 {% if user.is_authenticated %}
-                                                <li><a href="{% url 'profile' %}">Your Wedding</a></li>
+                                                <li><a href="{% url 'user_event' %}">Your Wedding</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="{% url 'logout' %}">Log Out</a></li>
                                                 {% else %}
