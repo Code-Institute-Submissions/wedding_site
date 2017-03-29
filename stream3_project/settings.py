@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'blog_app',
     'contactform_app',
     'storages',
+
 ]
 
 MIDDLEWARE = [
@@ -111,6 +112,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# EMAIL SERVER FOR CONTACT FORM
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# DEFAULT_FROM_EMAIL = 'blong@blong.com'
+# EMAIL_HOST_USER = ''
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_USE_TLS = False
+# EMAIL_PORT = 1025
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/

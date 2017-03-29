@@ -1,0 +1,14 @@
+Name:
+{{ first_name }} {{ last_name }}
+
+Email:
+{{ email_address }}
+
+Event Type:
+{{ event_type }}
+
+Event Package:
+{{ event_package }}
+
+Message:
+{{ your_message }}

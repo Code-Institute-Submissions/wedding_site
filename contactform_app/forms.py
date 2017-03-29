@@ -1,19 +1,19 @@
 from django import forms
 
 EVENT_TYPE_CHOICES = (
-    ('civil ceremony', 'Civil Ceremony'),
-    ('church ceremony', 'Church Ceremony'),
-    ('drinks deception', 'Drinks Reception'),
-    ('dinner music', 'Dinner Music'),
-    ('other', 'Other'),
+    ('Civil Ceremony', 'Civil Ceremony'),
+    ('Church Ceremony', 'Church Ceremony'),
+    ('Drinks Reception', 'Drinks Reception'),
+    ('Dinner Music', 'Dinner Music'),
+    ('Other', 'Other'),
 )
 
 EVENT_PACKAGE_CHOICES = (
-    ('voice & piano', 'Voice & Piano'),
-    ('voice & harp', 'Voice & Harp'),
-    ('piano instrumental', 'Piano instrumental'),
-    ('harp instrumental', 'Harp instrumental'),
-    ('other/undecided', 'Other/Undecided'),
+    ('Voice & Piano', 'Voice & Piano'),
+    ('Voice & Harp', 'Voice & Harp'),
+    ('Piano instrumental', 'Piano instrumental'),
+    ('Harp instrumental', 'Harp instrumental'),
+    ('Other/Undecided', 'Other/Undecided'),
 )
 
 
@@ -32,11 +32,16 @@ class ContactForm(forms.Form):
         choices=EVENT_TYPE_CHOICES,
     )
 
-    event_package = forms.MultipleChoiceField(
+    event_package = forms.ChoiceField(
         required=True,
         widget=forms.RadioSelect,
         choices=EVENT_PACKAGE_CHOICES,
     )
 
+    your_message = forms.CharField(
+        required=True,
+        max_length=1000,
+        widget=forms.Textarea,
+    )
 
     cc_myself = forms.BooleanField(required=False)
