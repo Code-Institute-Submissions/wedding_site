@@ -18,13 +18,11 @@ EVENT_PACKAGE_CHOICES = (
 
 
 class ContactForm(forms.Form):
-    first_name = forms.CharField(required=True, max_length=50)
+    full_name = forms.CharField(required=True, max_length=100)
 
-    last_name = forms.CharField(required=True, max_length=50)
+    email = forms.EmailField(required=True, max_length=100)
 
-    email_address = forms.EmailField(required=True, max_length=50)
-
-    event_location = forms.CharField(required=True, max_length=50)
+    event_location = forms.CharField(required=True, max_length=100)
 
     event_type = forms.MultipleChoiceField(
         required=True,
@@ -38,9 +36,9 @@ class ContactForm(forms.Form):
         choices=EVENT_PACKAGE_CHOICES,
     )
 
-    your_message = forms.CharField(
+    message = forms.CharField(
         required=True,
-        max_length=1000,
+        max_length=5000,
         widget=forms.Textarea,
     )
 
