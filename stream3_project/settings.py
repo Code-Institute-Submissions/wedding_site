@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'accounts_app',
     'events_app',
     'blog_app',
+    'contactform_app',
     'storages',
 ]
 

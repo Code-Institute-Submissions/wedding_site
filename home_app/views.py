@@ -23,9 +23,5 @@ def faq(request):
     return render(request, 'faq.html')
 
 
-def contact(request):
-    return render(request, 'contact.html')
-
-
 def blog(request):
     return render(request, 'blog.html')
