@@ -15,4 +15,9 @@ def event(request, id):
 
 def userEvent(request):
     event = Event.objects.get(owner=request.user)
-    return render(request, 'event_details.html', {'event': event})
+
+    if Event.DoesNotExist:
+        return render(request, 'no_event.html')
+    else:
+        return render(request, 'event_details.html', {'event': event})
+
