@@ -20,5 +20,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('home_app.urls')),
     url(r'^accounts/', include('accounts_app.urls')),
-    url(r'^event/', include('events_app.urls')),
+    url(r'^events/', include('events_app.urls')),
+    # url(r'^blog/', include('blog_app')),
 ]
+
+

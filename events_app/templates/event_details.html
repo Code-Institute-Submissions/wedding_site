@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="content">
+        <div id="container">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>{{ event.owner }}</td>
+                        <td>{{ event.name }}</td>
+                        <td>{{ event.date }}</td>
+                        <td>{{ event.price }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

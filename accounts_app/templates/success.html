@@ -5,7 +5,7 @@
     <script>
 
     function redirect(){
-       window.location.href = "{% url 'event' %}";
+       window.location.href = "{% url 'event' id=event.id %}";
     }
 
     setTimeout(redirect, 4000);
