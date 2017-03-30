@@ -21,9 +21,23 @@ EVENT_PACKAGE_CHOICES = (
 class ContactForm(forms.Form):
     full_name = forms.CharField(required=True, max_length=100)
 
-    email = forms.EmailField(required=True, max_length=100)
+    email = forms.EmailField(
+        required=True,
+        max_length=100
+    )
 
-    event_location = forms.CharField(required=True, max_length=100)
+    phone_number = forms.IntegerField(
+        widget=forms.NumberInput,
+    )
+
+    event_location = forms.CharField(
+        required=True,
+        max_length=100
+    )
+
+    event_date = forms.DateField(
+        required=True
+    )
 
     event_type = forms.MultipleChoiceField(
         required=True,

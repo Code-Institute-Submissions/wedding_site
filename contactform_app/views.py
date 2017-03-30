@@ -24,20 +24,26 @@ def contact(request):
         subject = 'Wedding site contact form'
         event_type = form.cleaned_data.get("event_type")
         event_package = form.cleaned_data.get("event_package")
+        phone_number = form.cleaned_data.get("phone_number")
+        event_date = form.cleaned_data.get("event_date")
         from_email = settings.EMAIL_HOST_USER
         to_email = [from_email]
 
         contact_message = \
             "Name: " "%s" \
             "Email: " "%s" \
+            "Phone Number: " "%s" \
             "Event Type: " "%s" \
             "Event Package: " "%s" \
+            "Date: " "%s" \
             "Message: " "%s" \
             % (
                 form_full_name,
                 form_email,
+                phone_number,
                 event_type,
                 event_package,
+                event_date,
                 form_message,
             )
 
@@ -52,5 +58,5 @@ def contact(request):
         "form": form,
     }
 
-    return render(request, 'successs.html', context)
+    return render(request, 'contactform.html', context)
 
