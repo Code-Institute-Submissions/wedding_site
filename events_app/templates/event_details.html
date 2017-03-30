@@ -1,26 +1,77 @@
 {% extends "base.html" %}
+
 {% block content %}
     <div id="content">
-        <div id="container">
+        <div class="container">
+
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Owner</th>
                     <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
                     <th>Date</th>
-                    <th>Price</th>
+                    <th>Time</th>
+
+
                 </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>{{ event.owner }}</td>
-                        <td>{{ event.name }}</td>
-                        <td>{{ event.date }}</td>
-                        <td>{{ event.price }}</td>
-                    </tr>
+                <tr>
+                    <td>{{ event.owner }}</td>
+                    <td>{{ event.email }}</td>
+                    <td>{{ event.phone }}</td>
+                    <td>{{ event.date }}</td>
+                    <td>{{ event.time }}</td>
+
+                </tr>
                 </tbody>
+
             </table>
+            <hr>
+            <hr>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Wedding Day Contact</th>
+                    <th>Venue</th>
+                    <th>Other Info</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>{{ event.day_contact }}</td>
+                    <td>{{ event.venue }}</td>
+                    <td>{{ event.other_info }}</td>
+                </tr>
+                </tbody>
+
+            </table>
+            <hr>
+            <hr>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Total Price</th>
+                    <th>Deposit Paid</th>
+                    <th>Remaining Balance</th>
+                    <th>Pay Now</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>{{ event.total_price }}</td>
+                    <td>{{ event.deposit_paid }}</td>
+                    <td>{{ event.balance }}</td>
+                    <td>Stripe Link</td>
+                </tr>
+                </tbody>
+
+            </table>
+
         </div>
     </div>
 {% endblock %}
