@@ -52,5 +52,5 @@ def contact(request):
         "form": form,
     }
 
-    return render(request, 'contactform.html', context)
+    return render(request, 'successs.html', context)
 

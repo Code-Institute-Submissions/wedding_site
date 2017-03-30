@@ -6,3 +6,5 @@ django-gravatar2==1.4.0
 django-storages==1.5.2
 gunicorn==19.7.1
 psycopg2==2.7.1
+requests==2.13.0
+stripe==1.51.0
