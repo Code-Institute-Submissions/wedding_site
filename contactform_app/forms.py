@@ -1,5 +1,6 @@
 from django import forms
 
+
 EVENT_TYPE_CHOICES = (
     ('Civil Ceremony', 'Civil Ceremony'),
     ('Church Ceremony', 'Church Ceremony'),
