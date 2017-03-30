@@ -40,8 +40,8 @@ def success(request):
     return render(request, 'success.html')
 
 
-def profile(request):
-    return render(request, 'profile.html')
+# def profile(request):
+#     return render(request, 'profile.html')
 
 
 def login(request):

@@ -8,12 +8,18 @@
         <div class="container">
 
             <form role="form" method="post" action="{% url 'login' %}?next={% url 'success' %}">
+
                 <legend>Login</legend>
+
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
+
+                <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Login</button>
                 </div>
+
             </form>
 
         </div>
