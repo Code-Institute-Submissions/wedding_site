@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^events/', include('events_app.urls')),
     url(r'^contact/', include('contactform_app.urls')),
     url(r'user/', include('accounts_app.urls')),
-    url(r'^payments/', include('payments_app.urls')),
+    # url(r'^payments/', include('payments_app.urls')),
     # url(r'^blog/', include('blog_app')),
 ]
 
