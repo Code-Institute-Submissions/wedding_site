@@ -6,14 +6,6 @@ from django.conf import settings
 # Create your views here.
 
 
-# def contact(request):
-#     form_class = ContactForm
-#
-#     return render(request, 'contactform.html', {
-#         'form': form_class,
-#     })
-
-
 def contact(request):
     form = ContactForm(request.POST or None)
 
@@ -28,15 +20,25 @@ def contact(request):
         event_date = form.cleaned_data.get("event_date")
         from_email = settings.EMAIL_HOST_USER
         to_email = ['bren.c.long@gmail.com']
+        cc_myself = form.cleaned_data['cc_myself']
+        if cc_myself:
+            to_email.append('form_email')
 
         contact_message = \
-            "Name: " "%s" \
-            "Email: " "%s" \
-            "Phone Number: " "%s" \
-            "Event Type: " "%s" \
-            "Event Package: " "%s" \
-            "Date: " "%s" \
-            "Message: " "%s" \
+            "Name: " "%s" "\n" \
+            "\n" \
+            "Email: " "%s" "\n" \
+            "\n" \
+            "Phone Number: " "%s" "\n" \
+            "\n" \
+            "Event Type: " "%s" "\n" \
+            "\n" \
+            "Event Package: " "%s" "\n" \
+            "\n" \
+            "Date: " "%s" "\n" \
+            "\n" \
+            "Message:" "\n" \
+            "%s" \
             % (
                 form_full_name,
                 form_email,
@@ -58,5 +60,5 @@ def contact(request):
         "form": form,
     }
 
-    return render(request, 'contactform.html', context)
+    return render(request, 'successs.html', context)
 

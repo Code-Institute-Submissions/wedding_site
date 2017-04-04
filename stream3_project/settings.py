@@ -34,13 +34,13 @@ ALLOWED_HOSTS = ['com-wedding-site.herokuapp.com', '127.0.0.1']
 INTERNAL_IPS = ['127.0.0.1']
 
 # EMAIL SERVER FOR CONTACT FORM
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = 587   # - Why not 587? - #
-EMAIL_USE_TLS = True    # - Why changing from default? - #
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 # EMAIL_FILE_PATH = ?   # - Can I use this to store communications in a database? - #
 
 # Application definition
