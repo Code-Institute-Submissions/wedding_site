@@ -6,6 +6,27 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700);
 @import url(../../vendor/flaticons/flaticon.css);
 
+#text-16 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#text-15 {
+    font-size: 14px;
+}
+
+#less-bottom {
+    padding: 20px 0 0 0;
+}
+
+.owl-nav .owl-prev i {
+    padding-left: 3px;
+    padding-top: 7px;
+}
+
+#subtitle-padding {
+    padding: 10px 8px;
+}
 
 .dropdown {
     position: relative;
@@ -442,7 +463,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     color: #303030;
-    font: 34px "Raleway", sans-serif;
+    font: 15px "Raleway", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
@@ -3552,6 +3573,7 @@ input[type='submit'],
 
 .owl-nav .owl-next i {
     padding-left: 3px;
+    padding-top: 7px;
 }
 
 .post-grid .owl-nav {
