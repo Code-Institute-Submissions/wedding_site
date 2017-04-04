@@ -2,7 +2,8 @@
 
 {% block content %}
     <div id="content">
-        <div class="container">
+        <div id="text-16" class="container text-center">
+            <div class="e-divider-2"></div>
 
             <table class="table table-striped">
                 <thead>
@@ -36,14 +37,27 @@
                 <tr>
                     <th>Wedding Day Contact</th>
                     <th>Venue</th>
-                    <th>Other Info</th>
                 </tr>
                 </thead>
-
                 <tbody>
                 <tr>
                     <td>{{ event.day_contact }}</td>
                     <td>{{ event.venue }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <hr>
+            <hr>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Other Info</th>
+                </tr>
+                </thead>
+
+
+                <tbody>
+                <tr>
                     <td>{{ event.other_info }}</td>
                 </tr>
                 </tbody>
@@ -71,6 +85,7 @@
                 </tbody>
 
             </table>
+            <div class="e-divider-2"></div>
 
         </div>
     </div>
