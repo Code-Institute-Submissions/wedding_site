@@ -6,6 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700);
 @import url(../../vendor/flaticons/flaticon.css);
 
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -441,7 +442,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     color: #303030;
-    font: 14px/1.7 "Raleway", sans-serif;
+    font: 34px "Raleway", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
@@ -3057,7 +3058,7 @@ input[type='submit'],
 }
 
 .post-grid article .post-excerpt p {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.2px;
 }
 

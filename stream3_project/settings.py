@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'home_app',
     'accounts_app',
     'events_app',
-    'blog_app',
     'contactform_app',
     'storages',
 
