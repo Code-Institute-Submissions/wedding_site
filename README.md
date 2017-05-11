@@ -32,7 +32,7 @@ Manual testing was undertaken for every feature of the website and satisfactoril
 A live version of this dashboard is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
 
 ## Other Notes
-Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV)
+Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV).
 
 ## Author
 Brendan Long
@@ -41,4 +41,4 @@ Brendan Long
 This project is licensed under the MIT License.
 
 ## Acknowledgments
-- [Neuethemes - Emma Theme](http://bootstrapcarnival.com/bootstrap-theme/emma-fashion-blog-html-template)
+- [Neuethemes - Emma Theme](http://wrapbootstrap.com/preview/WB055S9S3)

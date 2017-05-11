@@ -80,11 +80,21 @@
         );
 
 
-
         /* Sticky Scroll */
 
         $(".sticky-column").stickit({
             screenMinWidth: 1024 // apply if width >= 1024
+        });
+
+
+        // Testionial Slider
+        // When the DOM is ready, run this function
+        $(document).ready(function () {
+            //Set the carousel options
+            $('#quote-carousel').carousel({
+                pause: true,
+                interval: 10000,
+            });
         });
 
 
