@@ -20,6 +20,9 @@ class Event(models.Model):
     def balance(self):
         return self.total_price - self.deposit_paid
 
+    # def nothing_paid(self):
+    #     return self.deposit_paid == 0
+
     day_contact = models.CharField(blank=True, max_length=100)
     other_info = models.TextField(null=True)
 

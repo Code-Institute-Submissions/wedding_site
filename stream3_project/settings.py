@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'events_app',
     'contactform_app',
     'storages',
+    # 'payments',
 
 ]
 
