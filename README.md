@@ -31,6 +31,9 @@ Manual testing was undertaken for every feature of the website and satisfactoril
 ## Hosting
 A live version of this dashboard is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
 
+## Other Notes
+Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV)
+
 ## Author
 Brendan Long
 
