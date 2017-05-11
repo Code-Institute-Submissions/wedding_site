@@ -42,3 +42,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 - [Neuethemes - Emma Theme](http://wrapbootstrap.com/preview/WB055S9S3)
+- Testimonial Slider based on a version by [bmoeller1](https://bootsnipp.com/snippets/featured/responsive-quote-carousel)
