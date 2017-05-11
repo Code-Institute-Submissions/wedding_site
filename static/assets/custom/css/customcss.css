@@ -50,7 +50,7 @@
 }
 
 .carousel-inner > .item blockquote {
-    padding-left: 0;
+    padding-left: 13px;
 }
 
 .carousel-control {
@@ -71,6 +71,11 @@
 
 .text-center {
     text-align: center;
+}
+
+.carousel > .carousel-inner > .item > .row {
+    margin: 0;
+    padding: 0;
 }
 
 /**
@@ -120,4 +125,8 @@
 
 .remove-padding {
     padding: 0;
+}
+
+#instagram > .container > .text-center p {
+    text-align: center;
 }
