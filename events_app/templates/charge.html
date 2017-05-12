@@ -1,8 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
+
+    {# This jQuery redirects to a personalised event page after 4 seconds #}
+    <script>
+
+        function redirect() {
+            window.location.href = "{% url 'user_event' %}";
+        }
+
+        setTimeout(redirect, 4000);
+
+    </script>
+
     <div id="content">
         <div class="container">
-            <h1>Successful payment</h1>
+            <h1>Successful payment, you will be redirected shortly</h1>
         </div>
     </div>
 {% endblock %}
