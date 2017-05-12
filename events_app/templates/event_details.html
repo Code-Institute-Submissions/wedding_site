@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <div id="content">
         <div id="text-16" class="container text-center">
             <div class="e-divider-2"></div>
@@ -80,7 +81,21 @@
                     <td>{{ event.total_price }}</td>
                     <td>{{ event.deposit_paid }}</td>
                     <td>{{ event.balance }}</td>
-                    <td>Stripe Link</td>
+                    <td>
+                        <form action="{%  url 'charge' %}" method="POST">
+                            {% csrf_token %}
+                            <script
+                                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="pk_test_509oTDpMioP0ld7WSWZtKSAx"
+                                    data-amount="10000"
+                                    data-currency="eur"
+                                    data-name="Claire Heffernan Music"
+                                    data-description="€100 Deposit Payment"
+                                    data-locale="auto"
+                                    data-zip-code="false">
+                            </script>
+                        </form>
+                    </td>
                 </tr>
                 </tbody>
 
