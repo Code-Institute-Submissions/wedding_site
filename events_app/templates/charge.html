@@ -8,13 +8,17 @@
             window.location.href = "{% url 'user_event' %}";
         }
 
-        setTimeout(redirect, 4000);
+        setTimeout(redirect, 10000);
 
     </script>
 
     <div id="content">
         <div class="container">
-            <h1>Successful payment, you will be redirected shortly</h1>
+            <h1>Successful payment, you will be redirected shortly.</h1>
+            <hr>
+            <p>It may take 5 working days for your account balance to be updated</p>
+            <hr>
+            <p>If you wish to pay the full balance online, please contact me via email to arrange payment</p>
         </div>
     </div>
 {% endblock %}
