@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 
+
 {% block content %}
     <!-- Content Sections -->
     <div id="content">
@@ -19,33 +20,33 @@
 
                             <article id="01" class="post-block col-md-4 post hentry text-center">
                                 <div class="box">
-                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                    <div class="img-wrap"><a href="{% url 'vocalist' %}"><img class="img-responsive"
                                                                            src="{% static "assets/custom/images/claire_vocalist.jpg" %}"
                                                                            alt="01"></a></div>
                                     <div class="post-detail">
-                                        <h2 class="entry-title"><a href="#">Vocalist</a>
+                                        <h2 class="entry-title"><a href="{% url 'vocalist' %}">Vocalist</a>
                                         </h2>
                                     </div>
                                 </div>
                             </article>
                             <article id="01" class="post-block col-md-4 post hentry text-center">
                                 <div class="box">
-                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                    <div class="img-wrap"><a href="{% url 'harpist' %}"><img class="img-responsive"
                                                                            src="{% static "assets/custom/images/claire_harpist.jpg" %}"
                                                                            alt="01"></a></div>
                                     <div class="post-detail">
-                                        <h2 class="entry-title"><a href="#">Harpist</a>
+                                        <h2 class="entry-title"><a href="{% url 'harpist' %}">Harpist</a>
                                         </h2>
                                     </div>
                                 </div>
                             </article>
                             <article id="02" class="post-block col-md-4 post hentry text-center">
                                 <div class="box">
-                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                    <div class="img-wrap"><a href="{% url 'pianist' %}"><img class="img-responsive"
                                                                            src="{% static "assets/custom/images/claire_piano.jpg" %}"
                                                                            alt="01"></a></div>
                                     <div class="post-detail">
-                                        <h2 class="entry-title"><a href="#">Pianist</a>
+                                        <h2 class="entry-title"><a href="{% url 'pianist' %}">Pianist</a>
                                         </h2>
                                     </div>
                                 </div>
@@ -58,11 +59,11 @@
                                 <div class="col-md-offset-2"></div>
                                 <article id="01" class="post-block col-md-4 post hentry text-center">
                                     <div class="box">
-                                        <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                        <div class="img-wrap"><a href="{% url 'ceremony' %}"><img class="img-responsive"
                                                                                src="{% static "assets/custom/images/wedding_harp.jpg" %}"
                                                                                alt="01"></a></div>
                                         <div class="post-detail">
-                                            <h2 class="entry-title"><a href="#">Church/Civil Ceremony</a>
+                                            <h2 class="entry-title"><a href="{% url 'ceremony' %}">Church/Civil Ceremony</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -70,11 +71,11 @@
 
                                 <article id="02" class="post-block col-md-4 post hentry text-center">
                                     <div class="box">
-                                        <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                        <div class="img-wrap"><a href="{% url 'reception' %}"><img class="img-responsive"
                                                                                src="{% static "assets/custom/images/harp_meal.jpg" %}"
                                                                                alt="01"></a></div>
                                         <div class="post-detail">
-                                            <h2 class="entry-title"><a href="#">Reception/Evening Meal</a>
+                                            <h2 class="entry-title"><a href="{% url 'reception' %}">Reception/Evening Meal</a>
                                             </h2>
                                         </div>
                                     </div>
@@ -86,6 +87,7 @@
 
                     </div>
                 </div>
+            </div>
         </section>
         <!-- /Post Feed -->
 
