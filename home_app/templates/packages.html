@@ -1,12 +1,96 @@
 {% extends "base.html" %}
+{% load static from staticfiles %}
+
 {% block content %}
+    <!-- Content Sections -->
     <div id="content">
-        <div id="text-16" class="container text-center">
-            <div class="e-divider-20"></div>
-            <p>This page will detail the different packages that a customer can book.</p>
-            <p>Church Ceremony, Civil Ceremony, Dinner Music, Reception etc.</p>
-            <p>Different instrument combinations, voice, harp, piano.</p>
-            <div class="e-divider-20"></div>
-        </div>
+
+        <div class="e-divider-5"></div>
+
+
+        <!-- Post Feed -->
+        <section id="articles" class="post-grid">
+            <div class="container">
+                <div class="row no-sidebar">
+
+                    <!--Content Column-->
+                    <div class="col-md-12 flex">
+                        <div class="row row-flex row-flex-wrap">
+
+                            <article id="01" class="post-block col-md-4 post hentry text-center">
+                                <div class="box">
+                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                                                           src="{% static "assets/custom/images/claire_vocalist.jpg" %}"
+                                                                           alt="01"></a></div>
+                                    <div class="post-detail">
+                                        <h2 class="entry-title"><a href="#">Vocalist</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article id="01" class="post-block col-md-4 post hentry text-center">
+                                <div class="box">
+                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                                                           src="{% static "assets/custom/images/claire_harpist.jpg" %}"
+                                                                           alt="01"></a></div>
+                                    <div class="post-detail">
+                                        <h2 class="entry-title"><a href="#">Harpist</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                            <article id="02" class="post-block col-md-4 post hentry text-center">
+                                <div class="box">
+                                    <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                                                           src="{% static "assets/custom/images/claire_piano.jpg" %}"
+                                                                           alt="01"></a></div>
+                                    <div class="post-detail">
+                                        <h2 class="entry-title"><a href="#">Pianist</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="e-divider-3"></div>
+                        <div class="col-md-12 flex">
+                            <div class="row row-flex row-flex-wrap">
+
+                                <div class="col-md-offset-2"></div>
+                                <article id="01" class="post-block col-md-4 post hentry text-center">
+                                    <div class="box">
+                                        <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                                                               src="{% static "assets/custom/images/wedding_harp.jpg" %}"
+                                                                               alt="01"></a></div>
+                                        <div class="post-detail">
+                                            <h2 class="entry-title"><a href="#">Church/Civil Ceremony</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article id="02" class="post-block col-md-4 post hentry text-center">
+                                    <div class="box">
+                                        <div class="img-wrap"><a href="#"><img class="img-responsive"
+                                                                               src="{% static "assets/custom/images/harp_meal.jpg" %}"
+                                                                               alt="01"></a></div>
+                                        <div class="post-detail">
+                                            <h2 class="entry-title"><a href="#">Reception/Evening Meal</a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!--/Content Column-->
+
+
+                    </div>
+                </div>
+        </section>
+        <!-- /Post Feed -->
+
+        <div class="e-divider-6"></div>
+
+
     </div>
 {% endblock %}
