@@ -130,3 +130,10 @@
 #instagram > .container > .text-center p {
     text-align: center;
 }
+
+.flex .col-md-6 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+}

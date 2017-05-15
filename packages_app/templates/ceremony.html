@@ -1,10 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
+{% load static from staticfiles %}
 
-</body>
-</html>
+
+{% block content %}
+    <!-- Content Sections -->
+    <div id="content">
+
+        <!-- Post Feed -->
+        <div class="container">
+            <div class="row">
+
+                <!-- Post Feed -->
+                <section id="articles" class="">
+                    <div class="container">
+                        <div class="row">
+                            <!--Content Column-->
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <article id="01" class="col-md-12 post hentry">
+                                        <div class="post-detail">
+                                            <h2 class="entry-title text-center">Weddings</h2>
+                                        </div>
+                                        <div class="post-excerpt justify">
+                                            <div id="text-16">
+                                                <p>Claire performs weekly at wedding ceremonies, receptions, & evening
+                                                    meals. Any combination of the above can be provided as a reduced
+                                                    rate package deal. Ceremonies catered for are church ceremonies,
+                                                    humanist, spiritual,
+                                                    HSE, same-sex, blessings, vow renewals… or let Claire know if you
+                                                    had something else in mind.
+
+                                                <p>Claire can be booked as a harpist, pianist, singer, singer-harpist,
+                                                    or singer-pianist. She is also available to collaborate with other
+                                                    singers or musicians, having a wide network to call on..</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <article id="01" class="post-block col-md-3 post hentry text-center">
+                                        <div class="box">
+                                            <div class="img-wrap"><a href="#"><img
+                                                    class="img-responsive"
+                                                    src="{% static "assets/custom/images/claire_harp_1.jpg" %}"
+                                                    alt="01"></a></div>
+                                        </div>
+                                    </article>
+                                    <article id="02" class="post-block col-md-3 post hentry text-center">
+                                        <div class="box">
+                                            <div class="img-wrap"><a href="#"><img
+                                                    class="img-responsive"
+                                                    src="{% static "assets/custom/images/keyboard_outside.jpg" %}"
+                                                    alt="01"></a></div>
+                                        </div>
+                                    </article>
+                                    <article id="03" class="post-block col-md-3 post hentry text-center">
+                                        <div class="box">
+                                            <div class="img-wrap"><a href="#"><img
+                                                    class="img-responsive"
+                                                    src="{% static "assets/custom/images/wedding_harp.jpg" %}"
+                                                    alt="01"></a></div>
+                                        </div>
+                                    </article>
+                                    <article id="04" class="post-block col-md-3 post hentry text-center">
+                                        <div class="box">
+                                            <div class="img-wrap"><a href="#"><img
+                                                    class="img-responsive"
+                                                    src="{% static "assets/custom/images/cow.jpg" %}"
+                                                    alt="01"></a></div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--/Content Column-->
+
+                        </div>
+                    </div>
+                </section>
+                <!-- /Post Feed -->
+                <!--Instagram Section-->
+                <section id="instagram" class="e-block-short">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="font-accident-two-normal e-uppercase">Follow Me On Instagram</h3>
+                            <!--<h5 class="font-accident-one-bold e-uppercase hovercolor">Working hard and making the success</h5>-->
+                            <!--<div class="e-divider-1"></div>-->
+                            <p class="btn-lg color05">
+                                Please join me on Instagram, where I regularly share photos of the beautiful venues
+                                that I get
+                                to perform in.
+                            </p>
+                        </div>
+                        <div class="e-divider-4"></div>
+                        <div class="row nopadding">
+                            <!-- LightWidget WIDGET -->
+                            <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                            <iframe src="//lightwidget.com/widgets/0fdbd299d1025a00b2dcb0ad3a83b1ed.html"
+                                    scrolling="no" allowtransparency="true" class="lightwidget-widget"
+                                    style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+
+                        </div>
+                    </div>
+                </section>
+                <!--/Instagram Section-->
+                <div class="e-divider-6"></div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+{% endblock %}
