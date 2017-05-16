@@ -14,7 +14,9 @@ Once details are confirmed for an event, the web-master asks the user to registe
 ### Dummy Users
 #### Login Details (Use these to view confirmed events for different users)
 Username: jenjen
+
 Email: jenjen@jen.com
+
 Password: jenjenpassword
 
 
