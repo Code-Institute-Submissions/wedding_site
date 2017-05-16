@@ -1,10 +1,16 @@
 # Wedding Musician Website - Django Project
 
-An exercise in creating a Django based website for a wedding musician. Includes Account section for customers where they can access all confirmed details of their booking, and pay online for services provided.
+An exercise in creating a Django based website & CRM for a wedding musician. Includes Account section for customers where they can access all confirmed details of their booking, and pay online for services provided.
+When my client's customers contact her, communication arrives through many and varied channels, website contact, email, FaceBook, phone, SMS etc.
+My project is an attempt to provide a place where both my client and her customers can go to provide and view confirmed details respectively.
 
 
 ## Qualification
-To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here.:
+To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here:
+### For New Users:
+A new visitor to the website will contact my client through one of the afore-mentioned channels. Once details are confirmed for an event, the web-master creates an event in the admin panel that can then be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
+
+
 
 ## Getting Started
 
