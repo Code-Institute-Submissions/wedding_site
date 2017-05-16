@@ -150,3 +150,14 @@
     justify-content: center;
 }
 
+.email-reset-button {
+    width: 15%;
+    text-indent: 0;
+    border: none;
+}
+
+#email-reset-field input {
+    width: 50%;
+    text-align: center;
+    text-indent: 0;
+}

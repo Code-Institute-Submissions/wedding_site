@@ -5,7 +5,6 @@ from django.contrib.auth.views import password_reset, password_reset_done, passw
 
 urlpatterns = [
     url(r'^register/$', register, name='register'),
-    # url(r'^profile$', profile, name='profile'),
     url(r'^success/$', success, name='success'),
     url(r'^login/$', login, name='login'),
     url(r'^logout/$', logout, name='logout'),
