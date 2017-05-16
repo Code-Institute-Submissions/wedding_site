@@ -3,19 +3,27 @@
 */
 
 @media (max-width: 1200px) {
-
+    .event-details {
+        position: relative;
+        top: 0px;
+    }
 }
 
 @media (min-width: 992px) {
-
+    .event-details {
+        position: relative;
+        top: 0px;
+    }
 }
 
 @media (max-width: 992px) {
-
+    .event-details {
+        position: relative;
+        top: 0px;
+    }
 }
 
 @media (min-width: 768px) {
-
 }
 
 @media (max-width: 768px) {
@@ -37,6 +45,7 @@
         text-align: center;
         text-indent: 0;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -59,5 +68,6 @@
         text-align: center;
         text-indent: 0;
     }
+
 }
 

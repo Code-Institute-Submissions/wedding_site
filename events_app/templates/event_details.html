@@ -3,103 +3,41 @@
 {% block content %}
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <div id="content">
-        <div id="text-16" class="container text-center">
+        <div id="text-16" class="container event-details text-center">
             <div class="e-divider-2"></div>
 
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email Address</th>
-                    <th>Phone Number</th>
-                    <th>Date</th>
-                    <th>Time</th>
-
-
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>{{ event.owner }}</td>
-                    <td>{{ event.email }}</td>
-                    <td>{{ event.phone }}</td>
-                    <td>{{ event.date }}</td>
-                    <td>{{ event.time }}</td>
-
-                </tr>
-                </tbody>
-
-            </table>
+            <h3 class="font-accident-two-normal e-uppercase hidden"><span>Name:</span> {{ event.owner }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Name:</span> {{ event.name }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Email:</span> {{ event.email }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Phone:</span> {{ event.phone }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Date:</span> {{ event.date }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Time:</span> {{ event.time }}</h3>
             <hr>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Venue:</span> {{ event.venue }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Wedding Day Contact:</span> {{ event.day_contact }}
+            </h3>
             <hr>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Wedding Day Contact</th>
-                    <th>Venue</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>{{ event.day_contact }}</td>
-                    <td>{{ event.venue }}</td>
-                </tr>
-                </tbody>
-            </table>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Time:</span> {{ event.time }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Other Information:</span> {{ event.other_info }}</h3>
             <hr>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Total Price:</span> €{{ event.total_price }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Deposit Paid:</span> €{{ event.deposit_paid }}</h3>
+            <h3 class="font-accident-two-normal e-uppercase"><span>Balance Left to Pay:</span> €{{ event.balance }}</h3>
             <hr>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Other Info</th>
-                </tr>
-                </thead>
+            <form action="{% url 'charge' %}" method="POST">
+                {% csrf_token %}
+                <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_509oTDpMioP0ld7WSWZtKSAx"
+                        data-amount="0"
+                        data-currency="eur"
+                        data-name="Claire Heffernan Music"
+                        data-description="€100 Deposit Payment"
+                        data-locale="auto"
+                        data-zip-code="false">
+                </script>
+            </form>
 
-
-                <tbody>
-                <tr>
-                    <td>{{ event.other_info }}</td>
-                </tr>
-                </tbody>
-
-            </table>
-            <hr>
-            <hr>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Total Price</th>
-                    <th>Deposit Paid</th>
-                    <th>Remaining Balance</th>
-                    <th>Pay €100 Deposit Now</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>{{ event.total_price }}</td>
-                    <td>{{ event.deposit_paid }}</td>
-                    <td>{{ event.balance }}</td>
-                    <td>
-                        <form action="{%  url 'charge' %}" method="POST">
-                            {% csrf_token %}
-                            <script
-                                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                    data-key="pk_test_509oTDpMioP0ld7WSWZtKSAx"
-                                    data-amount="0"
-                                    data-currency="eur"
-                                    data-name="Claire Heffernan Music"
-                                    data-description="€100 Deposit Payment"
-                                    data-locale="auto"
-                                    data-zip-code="false">
-                            </script>
-                        </form>
-                    </td>
-                </tr>
-                </tbody>
-
-            </table>
             <div class="e-divider-2"></div>
 
         </div>
