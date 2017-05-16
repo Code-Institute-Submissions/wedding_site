@@ -13,11 +13,20 @@ A new visitor to the website will contact my client through one of the afore-men
 Once details are confirmed for an event, the web-master asks the user to register on the website if he/she should so desire to avail of this functionality. The webmaster then creates an event in the admin panel that can be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
 ### Dummy Users
 #### Login Details (Use these to view confirmed events for different users)
+Username: george
+
+Email: george@george.com
+
+Password: georgepassword
+
+
 Username: jenjen
 
 Email: jenjen@jen.com
 
 Password: jenjenpassword
+
+
 
 
 ## Getting Started
