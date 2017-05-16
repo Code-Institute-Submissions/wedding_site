@@ -26,14 +26,35 @@
     }
 
     .email-reset-button {
-    width: 30%;
-    text-indent: 0;
-    border: none;
-}
+        width: 30%;
+        text-indent: 0;
+        border: none;
+    }
+
+    .custom-inputs input {
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        text-indent: 0;
+    }
 }
 
 @media (max-width: 400px) {
+
+    .custom-buttons button {
+        width: 30%;
+        text-indent: 0;
+        border: none;
+    }
+
     #email-reset-field input {
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    .custom-inputs input {
+        margin: 0 auto;
         width: 100%;
         text-align: center;
         text-indent: 0;

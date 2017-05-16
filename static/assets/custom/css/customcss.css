@@ -161,3 +161,21 @@
     text-align: center;
     text-indent: 0;
 }
+
+.custom-buttons button {
+    width: 15%;
+    text-indent: 0;
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+
+.custom-inputs input {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    text-indent: 0;
+}
+
+
