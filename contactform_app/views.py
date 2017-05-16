@@ -20,9 +20,7 @@ def contact(request):
             event_date = form.cleaned_data.get("event_date")
             from_email = settings.EMAIL_HOST_USER
             to_email = ['bren.c.long@gmail.com']
-            cc_myself = form.cleaned_data['cc_myself']
-            if cc_myself:
-                to_email.append('form_email')
+
 
             contact_message = \
                 "Name: " "%s" "\n" \

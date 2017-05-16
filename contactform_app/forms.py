@@ -57,4 +57,4 @@ class ContactForm(forms.Form):
         widget=forms.Textarea,
     )
 
-    cc_myself = forms.BooleanField(required=False)
+    # cc_myself = forms.BooleanField(required=False)
