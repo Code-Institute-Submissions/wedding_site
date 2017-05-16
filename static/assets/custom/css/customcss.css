@@ -141,3 +141,11 @@
 #civil-ceremony {
     text-align: right;
 }
+
+.pink {
+    color: #E73758;
+}
+
+.center {
+    justify-content: center;
+}
