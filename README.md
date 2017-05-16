@@ -9,8 +9,13 @@ This project is an attempt to provide a place where both my client and her custo
 ##
 To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here:
 ### For New Users:
-A new visitor to the website will contact my client through one of the afore-mentioned channels. Once details are confirmed for an event, the web-master aska the user to register on the website if he/she should so desire to avail of this functionality, and the webmaster then creates an event in the admin panel that can then be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
-
+A new visitor to the website will contact my client through one of the afore-mentioned channels.
+Once details are confirmed for an event, the web-master asks the user to register on the website if he/she should so desire to avail of this functionality. The webmaster then creates an event in the admin panel that can be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
+### Dummy Users
+#### Login Details (Use these to view confirmed events for different users)
+Username: jenjen
+Email: jenjen@jen.com
+Password: jenjenpassword
 
 
 ## Getting Started
