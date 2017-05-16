@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+
     <div id="content">
         <div class="container">
-            <h1>Event does not exist yet, please check back soon.</h1>
+            <div class="e-divider-20"></div>
+            <h2 class="font-accident-two-normal e-uppercase text-center">I'm Sorry</h2>
+            <hr>
+            <p class="text-center">If you have finalised any details with me, they'll appear here soon</p>
+            <p class="text-center">Return to safety by clicking <a href="{% url 'index' %}"><span class="text-danger">here</span></a></p>
+            <div class="e-divider-20"></div>
         </div>
     </div>
+
 {% endblock %}

@@ -2,23 +2,28 @@
 {% block content %}
 
     {# This jQuery redirects to a personalised event page after 4 seconds #}
-    <script>
-
-        function redirect() {
-            window.location.href = "{% url 'user_event' %}";
-        }
-
-        setTimeout(redirect, 10000);
-
-    </script>
+    {#    <script>#}
+    {##}
+    {#        function redirect() {#}
+    {#            window.location.href = "{% url 'user_event' %}";#}
+    {#        }#}
+    {##}
+    {#        setTimeout(redirect, 10000);#}
+    {##}
+    {#    </script>#}
 
     <div id="content">
         <div class="container">
-            <h1>Successful payment, you will be redirected shortly.</h1>
+            <div class="e-divider-20"></div>
+            <h2 class="font-accident-two-normal e-uppercase text-center">Thank You</h2>
             <hr>
-            <p>It may take 5 working days for your account balance to be updated</p>
+            <p class="text-center">You have paid successfully, but it may take 5 working days for your account balance to be updated</p>
+            <p class="text-center">If you wish to pay the full balance online, please contact me via email to arrange
+                payment</p>
             <hr>
-            <p>If you wish to pay the full balance online, please contact me via email to arrange payment</p>
+            <p class="text-center">Return to your event by clicking <a href="{% url 'user_event' %}"><span class="text-danger">here</span></a></p>
+            <div class="e-divider-20"></div>
+
         </div>
     </div>
 {% endblock %}
