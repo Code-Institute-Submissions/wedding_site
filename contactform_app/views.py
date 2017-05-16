@@ -3,6 +3,7 @@ from contactform_app.forms import ContactForm
 from django.core.mail import send_mail
 from django.conf import settings
 
+
 # Create your views here.
 
 
@@ -20,7 +21,6 @@ def contact(request):
             event_date = form.cleaned_data.get("event_date")
             from_email = settings.EMAIL_HOST_USER
             to_email = ['bren.c.long@gmail.com']
-
 
             contact_message = \
                 "Name: " "%s" "\n" \
@@ -53,7 +53,7 @@ def contact(request):
                 from_email,
                 to_email,
                 fail_silently=False,
-                )
+            )
         context = {
             "form": form,
         }

@@ -59,7 +59,6 @@ INSTALLED_APPS = [
     'contactform_app',
     'packages_app',
     'storages',
-
 ]
 
 MIDDLEWARE = [

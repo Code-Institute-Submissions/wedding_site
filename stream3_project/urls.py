@@ -25,5 +25,3 @@ urlpatterns = [
     url(r'user/', include('accounts_app.urls')),
     url(r'^packages/', include('packages_app.urls'))
 ]
-
-

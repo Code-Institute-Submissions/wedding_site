@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from .views import packages, vocalist, harpist, pianist, ceremony, reception
+
 urlpatterns = [
     url(r'^$', packages, name="packages"),
     url(r'^vocalist', vocalist, name="vocalist"),

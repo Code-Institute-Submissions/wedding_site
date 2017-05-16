@@ -8,5 +8,3 @@ urlpatterns = [
     url(r'^faq', faq, name="faq"),
     url(r'^blog', blog, name="blog"),
 ]
-
-
