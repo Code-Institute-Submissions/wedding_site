@@ -137,3 +137,7 @@
     display: flex;
     width: 50%;
 }
+
+#civil-ceremony {
+    text-align: right;
+}
