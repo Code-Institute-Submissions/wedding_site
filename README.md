@@ -4,7 +4,7 @@ An exercise in creating a Django based website for a wedding musician. Includes 
 
 
 ## Qualification
-
+To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here.:
 
 ## Getting Started
 

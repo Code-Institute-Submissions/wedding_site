@@ -5,27 +5,25 @@
 
     <!-- Content Sections -->
     <div id="content" class="custom-buttons">
-    <div id="text-16" class="container text-center">
-        <div class="e-divider-10"></div>
-        <div class="custom-inputs">
+        <div id="text-16" class="container text-center">
+            <div class="e-divider-10"></div>
+            <div class="custom-inputs">
 
-            <form role="form" method="post" action="{% url 'login' %}?next={% url 'success' %}">
+                <form role="form" method="post" action="{% url 'login' %}?next={% url 'success' %}">
 
-                <legend>Login</legend>
-                {% csrf_token %}
-                {{ form | as_bootstrap }}
-                <p><a href="{% url 'password_reset' %}">I forgot my password</a></p>
+                    <legend>Login</legend>
+                    {% csrf_token %}
+                    {{ form | as_bootstrap }}
+                    <p><a href="{% url 'password_reset' %}">I forgot my password</a></p>
 
-                <div class="form-group">
-                    <button type="submit" class="login-button">Login</button>
-                </div>
+                    <div class="form-group">
+                        <button type="submit" class="login-button">Login</button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
+            <div class="e-divider-10"></div>
         </div>
-        <div class="e-divider-10"></div>
-
-
     </div>
-
 {% endblock %}
 
