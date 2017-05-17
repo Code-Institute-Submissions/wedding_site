@@ -56,7 +56,10 @@ Navigate to http://localhost:8000/ to view your app locally
 - [Stripe](https://stripe.com/) - allows both private individuals and businesses to accept payments over the Internet
 
 ## Testing
-Manual testing was undertaken for every feature of the website and satisfactorily passed. All code was run through an online validator (https://validator.w3.org/).
+Manual testing was undertaken for every feature of the website and satisfactorily passed.
+
+All code was run through an online validator at [w3.org](https://validator.w3.org/).
+
 
 ## Hosting
 A live version of this dashboard is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
