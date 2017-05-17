@@ -47,7 +47,7 @@ Download the correct version for your operating system and follow the installati
 Create a local environment and pip install all packages listed in requirements.txt
 
 ### Local Server
-Navigate to http://localhost:8000/ to view your app locally
+Navigate to http://localhost:8000/ to view your app locally.
 
 ## Built With
 
