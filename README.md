@@ -73,6 +73,8 @@ Manual testing was undertaken for every feature of the website and satisfactoril
 
 All code was run through an online validator at [w3.org](https://validator.w3.org/).
 
+Stripe API works with my test keys, and transactions show in my Stripe account.
+
 
 ## Responsiveness
 Has been tested across multiple devices and browsers. Have yet to come across any undersired responsiveness issues.
