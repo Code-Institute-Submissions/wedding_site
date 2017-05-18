@@ -75,8 +75,7 @@ All code was run through an online validator at [w3.org](https://validator.w3.or
 
 
 ## Responsiveness
-Google Chrome responsive tool in inspector is buggy. App displays as desired in actual devices.
-
+Has been tested across multiple devices and browsers. Have yet to come across any undersired responsiveness issues.
 
 ## Other Notes
 Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV).
