@@ -12,7 +12,7 @@ To display the full functionality of this website, I have created a number of du
 A new visitor to the website will contact my client through one of the afore-mentioned channels.
 Once details are confirmed for an event, the web-master asks the user to register on the website if he/she should so desire to avail of this functionality. The webmaster then creates an event in the admin panel that can be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
 
-Create an account to see this functionality working. You can also test password reset emails and contact form functionality, all of which is working correctly as of 16/05/2017. (From time to time Gmail [used here only for testing] raises its SMTP security level so this may not work continuously)
+Create an account to see this functionality working. You can also test password reset emails and contact form functionality, all of which is working correctly as of 16/05/2017. (From time to time Gmail [used here only for testing] resets its SMTP security level so this may not work continuously)
 
 ### Dummy Users
 #### Login Details (Use these to view confirmed events for different users)
@@ -66,7 +66,7 @@ All code was run through an online validator at [w3.org](https://validator.w3.or
 Google Chrome responsive tool in inspector is buggy. App displays as desired in actual devices.
 
 ## Hosting
-A live version of this dashboard is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
+A live version of this application is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
 
 ## Other Notes
 Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV).
