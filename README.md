@@ -6,7 +6,7 @@ When my client's customers contact her, communication arrives through many and v
 
 This project is an attempt to provide a place where both my client and her customers can go to provide and view confirmed details respectively.
 
-Text content is not intended production.
+Text content is not intended for production.
 
 ##
 To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here:
@@ -14,7 +14,7 @@ To display the full functionality of this website, I have created a number of du
 A new visitor to the website will contact my client through one of the afore-mentioned channels.
 Once details are confirmed for an event, the web-master asks the user to register on the website if he/she should so desire to avail of this functionality. The webmaster then creates an event in the admin panel that can be viewed by the user and confirmed by paying a deposit through the provided Stripe link.
 
-Create an account to see this functionality working. You can also test password reset emails and contact form functionality, all of which is working correctly as of 16/05/2017. (From time to time Gmail [used here only for testing] resets its SMTP security level so this may not work continuously)
+Create an account to see this functionality working. You can also test password reset emails and contact form functionality, all of which is working correctly as of 16/05/2017. (From time to time Gmail [used here as a server only for testing] resets its SMTP security level so this may not work continuously)
 
 ### Dummy Users
 #### Login Details (Use these to view confirmed events for different users)
@@ -55,7 +55,7 @@ Download the correct version for your operating system and follow the installati
 Create and activate a local virtual environment and pip install -r requirements.txt
 
 ### Local Server
-Run your app using the following commands in command line:
+Run your app using the following command in command line:
 
 $ python manage.py runserver
 
