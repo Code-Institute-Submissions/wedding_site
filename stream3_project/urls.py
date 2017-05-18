@@ -28,9 +28,9 @@ urlpatterns = [
     url(r'user/', include('accounts_app.urls')),
     url(r'^packages/', include('packages_app.urls')),
     url(
-            r'^favicon.png$',
+            r'^favicon.ico$',
             RedirectView.as_view(
-                url=staticfiles_storage.url('favicon.png'),
+                url=staticfiles_storage.url('assets/custom/images/favicon.png'),
                 permanent=False),
             name="favicon"
         ),
