@@ -55,11 +55,15 @@ Navigate to http://localhost:8000/ to view your app locally.
 - [PostgreSQL](https://www.postgresql.org/) - a powerful, open source object-relational database system
 - [Stripe](https://stripe.com/) - allows both private individuals and businesses to accept payments over the Internet
 
+
 ## Testing
 Manual testing was undertaken for every feature of the website and satisfactorily passed.
 
 All code was run through an online validator at [w3.org](https://validator.w3.org/).
 
+
+## Responsiveness
+Google Chrome responsive tool in inspector is buggy. App displays as desired in actual devices.
 
 ## Hosting
 A live version of this dashboard is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
