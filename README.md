@@ -6,6 +6,8 @@ When my client's customers contact her, communication arrives through many and v
 
 This project is an attempt to provide a place where both my client and her customers can go to provide and view confirmed details respectively.
 
+Text content is not intended production.
+
 ##
 To display the full functionality of this website, I have created a number of dummy user accounts with associated event details which are viewable to the user. A walkthrough is provided here:
 ### For New Users:
@@ -40,11 +42,17 @@ Password: montypythonpassword
 
 ### Prerequisites
 
+No installation is necessary to view this app online.
+A live version of this app is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
+
+If you wish to test/develop this app locally, clone this repo and use the following guidelines:
+
+### Python
 You must have Python 2.7 installed on your system, available [here](https://www.python.org/).
 Download the correct version for your operating system and follow the installation instructions.
 
 ### requirements.txt
-Create a local environment and pip install all packages listed in requirements.txt
+Create and activate a local virtual environment and pip install -r requirements.txt
 
 ### Local Server
 Navigate to http://localhost:8000/ to view your app locally.
@@ -65,8 +73,6 @@ All code was run through an online validator at [w3.org](https://validator.w3.or
 ## Responsiveness
 Google Chrome responsive tool in inspector is buggy. App displays as desired in actual devices.
 
-## Hosting
-A live version of this application is hosted [here](https://com-wedding-site.herokuapp.com/) on Heroku.
 
 ## Other Notes
 Mindmap created with [coggle.it](https://coggle.it/) before writing any code, available to view [here](https://coggle.it/diagram/WRRcSRe8vAABLQOV).
