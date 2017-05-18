@@ -55,6 +55,10 @@ Download the correct version for your operating system and follow the installati
 Create and activate a local virtual environment and pip install -r requirements.txt
 
 ### Local Server
+Run your app using the following commands in command line:
+
+$ python manage.py runserver
+
 Navigate to http://localhost:8000/ to view your app locally.
 
 ## Built With
