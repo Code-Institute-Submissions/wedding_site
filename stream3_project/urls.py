@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,5 +26,12 @@ urlpatterns = [
     url(r'^events/', include('events_app.urls')),
     url(r'^contact/', include('contactform_app.urls')),
     url(r'user/', include('accounts_app.urls')),
-    url(r'^packages/', include('packages_app.urls'))
+    url(r'^packages/', include('packages_app.urls')),
+    url(
+            r'^favicon.ico$',
+            RedirectView.as_view(
+                url=staticfiles_storage.url('favicon.png'),
+                permanent=False),
+            name="favicon"
+        ),
 ]
