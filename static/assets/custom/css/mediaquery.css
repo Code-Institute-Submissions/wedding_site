@@ -21,6 +21,10 @@
         position: relative;
         top: 0px;
     }
+
+    .ipad {
+        padding-top: 50px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -46,6 +50,10 @@
         text-indent: 0;
     }
 
+    .ipad {
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -67,6 +75,19 @@
         width: 100%;
         text-align: center;
         text-indent: 0;
+    }
+
+    #quote-carousel {
+        padding: 0 35px 30px 40px;
+        margin-top: 30px;
+    }
+
+    .testimonial-slider {
+        padding-bottom: 50px;
+    }
+
+    .ipad {
+        padding-top: 0;
     }
 
 }
