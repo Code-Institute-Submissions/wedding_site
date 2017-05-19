@@ -66,6 +66,8 @@ Navigate to http://localhost:8000/ to view your app locally.
 - [Django](https://www.djangoproject.com/) - a high-level Python Web framework that encourages rapid development and clean, pragmatic design
 - [PostgreSQL](https://www.postgresql.org/) - a powerful, open source object-relational database system
 - [Stripe](https://stripe.com/) - allows both private individuals and businesses to accept payments over the Internet
+- [Amazon S3](https://aws.amazon.com/s3/) - object storage with a simple web service interface to store and retrieve any amount of data from anywhere on the web
+
 
 
 ## Testing
